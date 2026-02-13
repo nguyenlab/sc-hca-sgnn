@@ -1,0 +1,17 @@
+# LLM-specific dependencies for contract-level and function-level vulnerability detection
+# Install in addition to main project requirements (PyTorch, PyTorch Geometric, etc.)
+
+# Core LLM libraries
+transformers>=4.35.0
+peft>=0.7.0  # For LoRA efficient finetuning
+accelerate>=0.25.0
+bitsandbytes>=0.41.0  # For 8-bit quantization
+
+# Training utilities
+datasets>=2.15.0
+evaluate>=0.4.0
+
+# Already in main requirements but listing for completeness
+scikit-learn>=1.0.0
+numpy>=1.21.0
+tqdm>=4.62.0

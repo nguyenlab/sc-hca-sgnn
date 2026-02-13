@@ -1,0 +1,105 @@
+# Requirements for Smart Contract Vulnerability Detection (sc-dev environment)
+# GNN-based vulnerability detection using PyTorch Geometric
+
+# =============================================================================
+# Solidity Compiler (CRITICAL - Required for AST extraction)
+# =============================================================================
+# py-solc-x - Python wrapper for Solidity compiler (solc)
+# Automatically downloads and manages multiple solc versions
+# Used by src/utils.py::ASTExtractor to compile contracts and extract ASTs
+py-solc-x>=1.1.0
+
+# =============================================================================
+# Core Deep Learning Framework
+# =============================================================================
+# Install PyTorch with CUDA support (adjust CUDA version as needed)
+# For CUDA 11.8:
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# For CPU only:
+#   pip install torch torchvision torchaudio
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# =============================================================================
+# Graph Neural Networks
+# =============================================================================
+# PyTorch Geometric and dependencies
+# IMPORTANT: Install PyTorch FIRST, then use pip install with --find-links
+# to get pre-built wheels that match your PyTorch/CUDA version
+# 
+# Manual installation (recommended to avoid build errors):
+#   pip install torch-geometric
+#   pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+#
+# Adjust URL based on your PyTorch version and CUDA:
+#   - torch-2.0.0+cu118.html (PyTorch 2.0 + CUDA 11.8)
+#   - torch-2.1.0+cu118.html (PyTorch 2.1 + CUDA 11.8)
+#   - torch-2.0.0+cpu.html (CPU only)
+#
+torch-geometric>=2.4.0
+# Note: torch-scatter, torch-sparse, torch-cluster, torch-spline-conv
+# should be installed via --find-links, not from PyPI (see above)
+
+# =============================================================================
+# Machine Learning & Scientific Computing
+# =============================================================================
+scikit-learn>=1.0.0
+numpy>=1.21.0
+scipy>=1.7.0
+
+# =============================================================================
+# Utilities
+# =============================================================================
+tqdm>=4.62.0  # Progress bars for training loops
+
+# =============================================================================
+# Visualization (optional - for visualize_graph.py)
+# =============================================================================
+matplotlib>=3.5.0
+networkx>=2.6.0
+
+# =============================================================================
+# FastText Embeddings (optional - for BSGVD model with semantic features)
+# =============================================================================
+# gensim - Required for FastText embedding training and inference
+# Install with: pip install gensim
+# Used by models/graph_level/fasttext_embedding.py
+gensim>=4.0.0
+
+# =============================================================================
+# Development & Testing
+# =============================================================================
+# No additional dependencies needed for main GNN code
+
+# =============================================================================
+# Notes
+# =============================================================================
+# 1. Install PyTorch FIRST with appropriate CUDA version for your GPU
+# 2. Then install PyTorch Geometric packages
+# 3. For LLM-based comparison experiments, install: llm-based/requirements.txt
+# 4. Python version: 3.9+ recommended
+# 5. CUDA version: 11.8 or 12.1 recommended (match with PyTorch installation)
+#
+# Quick setup:
+#   conda create -n sc-dev python=3.11
+#   conda activate sc-dev
+#   
+#   # Step 1: Install Solidity compiler wrapper
+#   pip install py-solc-x
+#   
+#   # Step 2: Install PyTorch (MUST be installed before PyG extensions)
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+#   
+#   # Step 3: Install PyTorch Geometric with pre-built wheels
+#   pip install torch-geometric
+#   pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+#   
+#   # Step 4: Install remaining dependencies
+#   pip install -r requirements.txt
+#
+# Notes:
+# - py-solc-x automatically downloads solc binaries as needed (see src/utils.py)
+# - Adjust PyG wheel URL to match your PyTorch version (check with: python -c "import torch; print(torch.__version__)")
+# - For PyTorch 2.1+: use torch-2.1.0+cu118.html
+# - For CPU only: use torch-2.0.0+cpu.html

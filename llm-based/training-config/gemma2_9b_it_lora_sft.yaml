@@ -1,0 +1,41 @@
+### Model Configuration
+model_name_or_path: google/gemma-2-9b-it
+trust_remote_code: true
+
+### Training Stage
+stage: sft
+do_train: true
+
+### LoRA Configuration
+finetuning_type: lora
+lora_rank: 8
+lora_target: all
+
+### Dataset Configuration
+dataset: sc_synthetic_train
+template: gemma2
+cutoff_len: 2048
+max_samples: 1000
+preprocessing_num_workers: 16
+
+### Output Configuration
+output_dir: outputs/instruct_sft/gemma2_9b_it/lora/sft
+logging_steps: 10
+save_steps: 500
+plot_loss: true
+overwrite_output_dir: true
+save_only_model: false
+report_to: none
+
+### Training Hyperparameters
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 1.0e-4
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+
+### Hardware Configuration
+bf16: true
+dataloader_num_workers: 4
+ddp_timeout: 180000000
