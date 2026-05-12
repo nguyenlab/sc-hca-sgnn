@@ -1,0 +1,4796 @@
+{
+  "dataset": "synthetic",
+  "split_filter": "test",
+  "max_positives": null,
+  "image": "reep:smoke",
+  "timeout_s": 120,
+  "seed": 42,
+  "n_contracts": 30,
+  "n_timeout": 0,
+  "n_error": 7,
+  "total_elapsed_s": 107.0069625377655,
+  "metrics": {
+    "function_level": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.9654377880184332,
+      "auc": 0.5,
+      "n_samples": 868,
+      "n_positive": 30,
+      "n_predicted": 0
+    },
+    "contract_level": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.5,
+      "auc": 0.5,
+      "n_contracts": 30,
+      "n_positive_contracts": 15,
+      "n_predicted_contracts": 0
+    }
+  },
+  "records": [
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/vulnerable/0x31c70e9a1bab16f47710e4b302c49998cfb36ef9_coupled_12.sol",
+      "vulnerability_type": "cross-function",
+      "contract_label": 1,
+      "solc_ver": "0.4.24",
+      "reep_is_bug": false,
+      "reep_function": "compile error!",
+      "reep_contract": "",
+      "elapsed_s": 7.608514785766602,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "Ownable",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "SketchMarket",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setOwnerCut",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setListingFeeInWei",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "createSketch",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setOwnerFlag",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getSketch",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getBidCountForSketchesWithHolder",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getSketchesOnOffer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getSketchesOnOfferWithHolder",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getSketchesWithHolder",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getSketchesWithAuthor",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferSketch",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "sketchNoLongerForSale",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "offerSketchForSale",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "offerSketchForSaleToAddress",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "acceptBidForSketch",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "buySketch",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "withdraw",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "enterBidForSketch",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "withdrawBidForSketch",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "computeCut",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/vulnerable/0x11ab8e468a6e4e0f69bfd35e4e5a941043f51fd3_coupled_74.sol",
+      "vulnerability_type": "cross-function",
+      "contract_label": 1,
+      "solc_ver": "0.4.24",
+      "reep_is_bug": false,
+      "reep_function": "compile error!",
+      "reep_contract": "",
+      "elapsed_s": 7.629336833953857,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "changeCommissionFee",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "changeOwner",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "deposit",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "getTransfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "AdvancedDeposit",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getAdvancedTransfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "viewIndexNumber",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "viewPassword",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "emergency",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "withdrawFee",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "withdraw",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/vulnerable/0x0ebb614204e47c09b6c3feb9aaecad8ee060e23e_point_5_reentrancy.sol",
+      "vulnerability_type": "reentrancy",
+      "contract_label": 1,
+      "solc_ver": "0.4.24",
+      "reep_is_bug": false,
+      "reep_function": "compile error!",
+      "reep_contract": "",
+      "elapsed_s": 7.669000625610352,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "deposit_userBalances",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "CPAYToken",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "increaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "decreaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "burn",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "mint",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "pause",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "unpause",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "destroy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "reclaimToken",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "asyncSend",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "withdrawPayments",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "withdrawToAdress",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "mul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "div",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "sub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "add",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/vulnerable/0x1891e8301397defc0562f35ff9a9b281dec09a5e_point_3_reentrancy.sol",
+      "vulnerability_type": "reentrancy",
+      "contract_label": 1,
+      "solc_ver": "0.5.0",
+      "reep_is_bug": false,
+      "reep_function": "NO_1",
+      "reep_contract": "",
+      "elapsed_s": 8.388622045516968,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "mul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "div",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "sub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "add",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "mod",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "tokenFallback",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "owner",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "isOwner",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "renounceOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "_transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "paused",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "pause",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "unpause",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "deposit_credits",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "name",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "symbol",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "decimals",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "increaseAllowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "decreaseAllowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferToAddress",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferToContract",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "isContract",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "tokenFallback",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/vulnerable/0x82fa222afa3f6d753e01e082c0674abcf0a3ddb5_point_11_reentrancy.sol",
+      "vulnerability_type": "reentrancy",
+      "contract_label": 1,
+      "solc_ver": "0.4.26",
+      "reep_is_bug": false,
+      "reep_function": "NO_1",
+      "reep_contract": "",
+      "elapsed_s": 5.210098028182983,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "deposit_deposits",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "investETH",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "divestETH",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "withdraw",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getProfitFromSender",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getProfit",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getBonus",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "reinvestProfit",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getAffiliateCommision",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "withdrawAffiliateCommision",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "getInvested",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getBalance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "min",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "max",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "mul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "div",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "sub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "add",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/vulnerable/0x8f3a9953c5ca4449d15721cd6e11ebc15a89e569_point_1_reentrancy.sol",
+      "vulnerability_type": "reentrancy",
+      "contract_label": 1,
+      "solc_ver": "0.4.24",
+      "reep_is_bug": false,
+      "reep_function": "NO_1",
+      "reep_contract": "",
+      "elapsed_s": 4.784341096878052,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "mul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "div",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "sub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "add",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "deposit_amounts",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "burntokens",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/vulnerable/0x997e3adb550a85895f5becf54a2751e6df24edc8_coupled_165.sol",
+      "vulnerability_type": "cross-function",
+      "contract_label": 1,
+      "solc_ver": "0.4.24",
+      "reep_is_bug": false,
+      "reep_function": "compile error!",
+      "reep_contract": "",
+      "elapsed_s": 4.808668851852417,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeMul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeSub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeAdd",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeNumDigits",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "changeApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "GRO",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "initialiseContract",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setVestingContract",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "updatePrice",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "require_limited_change",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "mint",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allocatePresaleTokens",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "firstDigit",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "verifyParticipant",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "buy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "buyTo",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "icoNumeratorPrice",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "currentBlock",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "currentTime",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "blockLottery",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "requestWithdrawal",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "withdraw",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "enact_withdrawal_greater_equal",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "enact_withdrawal_less",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "checkWithdrawValue",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "addLiquidity",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "removeLiquidity",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "changeFundWallet",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "changeControlWallet",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "changeWaitTime",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "changeMinAmount",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "updateFundingStartBlock",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "updateFundingEndBlock",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "halt",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "unhalt",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "enableTrading",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "claimTokens",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/vulnerable/0xb052f8a33d8bb068414eade06af6955199f9f010_point_2_reentrancy.sol",
+      "vulnerability_type": "reentrancy",
+      "contract_label": 1,
+      "solc_ver": "0.4.24",
+      "reep_is_bug": false,
+      "reep_function": "compile error!",
+      "reep_contract": "",
+      "elapsed_s": 4.967698335647583,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "mul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "sub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "add",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "Ownable",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "deposit_allocations",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "MultiToken",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "swapTokens",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "mintToken",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "increaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "decreaseApproval",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/vulnerable/0x1bd3435b7db7dd77753b1283e2a9d751f000367b_point_18_reentrancy.sol",
+      "vulnerability_type": "reentrancy",
+      "contract_label": 1,
+      "solc_ver": "0.4.24",
+      "reep_is_bug": false,
+      "reep_function": "comfirmRedeem(uint256)",
+      "reep_contract": "TwoPhaseToken",
+      "elapsed_s": 24.78337836265564,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "add",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "remove",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "check",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "has",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "checkRole",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "hasRole",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "ownerAddCeo",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "ownerRemoveCeo",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "ceoAddCoo",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "ceoRemoveCoo",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cooAddManager",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cooRemoveManager",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cooAddReviewer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cooRemoveReviewer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cooAddCro",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cooRemoveCro",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "addRole",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "removeRole",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "mul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "div",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "sub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "add",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "increaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "decreaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "pause",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "unpause",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "increaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "decreaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getBlackListStatus",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "addBlackList",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "removeBlackList",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "destroyBlackFunds",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "deposit_reserves",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "submitIssue",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "comfirmIsses",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "submitRedeem",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "comfirmRedeem",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "getMethodValue",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getMethodState",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupplyByLegacy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOfByLegacy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferByLegacy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowanceByLegacy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFromByLegacy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approveByLegacy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "increaseApprovalByLegacy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "decreaseApprovalByLegacy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "increaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "decreaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "deprecate",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setFeeParams",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferAssetOwner",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/clean/0xfa90d6a9a8b7fcdcbbb06e441c0ecaa57f55b11e.sol",
+      "vulnerability_type": "clean",
+      "contract_label": 0,
+      "solc_ver": "0.5.16",
+      "reep_is_bug": false,
+      "reep_function": "NO_1",
+      "reep_contract": "",
+      "elapsed_s": 5.372044801712036,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "add",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "sub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "mul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "div",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "receiveApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "acceptOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approveAndCall",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferAnyERC20Token",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/clean/0x27eba2a67b906eb4341dfe54ce78083a611a0222.sol",
+      "vulnerability_type": "clean",
+      "contract_label": 0,
+      "solc_ver": "0.5.16",
+      "reep_is_bug": false,
+      "reep_function": "NO_1",
+      "reep_contract": "",
+      "elapsed_s": 4.589847803115845,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "safeAdd",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeSub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeMul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeDiv",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "receiveApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "acceptOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approveAndCall",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferAnyERC20Token",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/clean/0x07536201e0c4c7751c9cfed79f1bf5dba4772c9e.sol",
+      "vulnerability_type": "clean",
+      "contract_label": 0,
+      "solc_ver": "0.4.26",
+      "reep_is_bug": false,
+      "reep_function": "NO_1",
+      "reep_contract": "",
+      "elapsed_s": 4.436149597167969,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "Sign",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "destroy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "SetCert",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "GetCert",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/clean/0x65bf93f65961ff6b778d6b7e52c5807a97c2e4f3.sol",
+      "vulnerability_type": "clean",
+      "contract_label": 0,
+      "solc_ver": "0.5.16",
+      "reep_is_bug": false,
+      "reep_function": "NO_1",
+      "reep_contract": "",
+      "elapsed_s": 4.966374397277832,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "mul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeDiv",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeSub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeAdd",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "createTokens",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setOwner",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "freezeTransfers",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "unfreezeTransfers",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "refundTokens",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "freezeAccount",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/clean/0x5ecb025e51415dba9fd272c551076357cf4069f5.sol",
+      "vulnerability_type": "clean",
+      "contract_label": 0,
+      "solc_ver": "0.5.16",
+      "reep_is_bug": false,
+      "reep_function": "NO_1",
+      "reep_contract": "",
+      "elapsed_s": 4.796814441680908,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "add",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "sub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "mul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "div",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "receiveApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "acceptOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approveAndCall",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferAnyERC20Token",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/clean/0x52494fbffe10f8c29411521040ae8618c334981e.sol",
+      "vulnerability_type": "clean",
+      "contract_label": 0,
+      "solc_ver": "0.4.24",
+      "reep_is_bug": false,
+      "reep_function": "NO_1",
+      "reep_contract": "",
+      "elapsed_s": 4.7910075187683105,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "mul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "div",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "sub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "add",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "mintTokens",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "burnTokens",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/vulnerable/0x22e53d58d3f230f77dd17f509113d3e5fdf7adb8_point_1_reentrancy.sol",
+      "vulnerability_type": "reentrancy",
+      "contract_label": 1,
+      "solc_ver": "0.4.24",
+      "reep_is_bug": false,
+      "reep_function": null,
+      "reep_contract": null,
+      "elapsed_s": 41.76686215400696,
+      "timed_out": false,
+      "error": "no csv output",
+      "function_predictions": [
+        {
+          "name": "receiveApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "deposit_amounts",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "SIMAT",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "_transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approveAndCall",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "burn",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "burnFrom",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/vulnerable/0x11e00b63842cff31ee5195f8503f78de9041a6aa_point_2_reentrancy.sol",
+      "vulnerability_type": "reentrancy",
+      "contract_label": 1,
+      "solc_ver": "0.4.24",
+      "reep_is_bug": false,
+      "reep_function": null,
+      "reep_contract": null,
+      "elapsed_s": 42.32914924621582,
+      "timed_out": false,
+      "error": "no csv output",
+      "function_predictions": [
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "mul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "div",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "sub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "add",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "deposit_reserves",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "increaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "decreaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "burn",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "_burn",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/clean/0x30f4a3e0ab7a76733d8b60b89dd93c3d0b4c9e2f.sol",
+      "vulnerability_type": "clean",
+      "contract_label": 0,
+      "solc_ver": "0.4.24",
+      "reep_is_bug": false,
+      "reep_function": "compile error!",
+      "reep_contract": "",
+      "elapsed_s": 4.629328012466431,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "mul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "div",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "sub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "add",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "increaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "decreaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "burn",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "CryptogeneToken",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/clean/0x2492644798cb3b5162159a6e7d261fe74435eeea.sol",
+      "vulnerability_type": "clean",
+      "contract_label": 0,
+      "solc_ver": "0.4.24",
+      "reep_is_bug": false,
+      "reep_function": "NO_1",
+      "reep_contract": "",
+      "elapsed_s": 4.574743747711182,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "prove",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/clean/0xdcc982c9ead246c52dc073bc545e259f243e27f7.sol",
+      "vulnerability_type": "clean",
+      "contract_label": 0,
+      "solc_ver": "0.4.26",
+      "reep_is_bug": false,
+      "reep_function": "NO_1",
+      "reep_contract": "",
+      "elapsed_s": 4.551872491836548,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "Owned",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "DACVest",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setup",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "release",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/vulnerable/0x5dbe296f97b23c4a6aa6183d73e574d02ba5c719_point_7_reentrancy.sol",
+      "vulnerability_type": "reentrancy",
+      "contract_label": 1,
+      "solc_ver": "0.4.26",
+      "reep_is_bug": false,
+      "reep_function": null,
+      "reep_contract": null,
+      "elapsed_s": 39.8360059261322,
+      "timed_out": false,
+      "error": "no csv output",
+      "function_predictions": [
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeAdd",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeSub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeMul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "AbstractToken",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "deposit_userBalances",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "LUCToken",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "name",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "symbol",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "decimals",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "burnTokens",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setOwner",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "freezeTransfers",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "unfreezeTransfers",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/clean/0x1df4683d1cee4d167ea4a9ab3be162fbe9794f95.sol",
+      "vulnerability_type": "clean",
+      "contract_label": 0,
+      "solc_ver": "0.4.24",
+      "reep_is_bug": false,
+      "reep_function": "NO_1",
+      "reep_contract": "",
+      "elapsed_s": 5.357641696929932,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "mul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "div",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "sub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "add",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "burn",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "_burn",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "Ownable",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "increaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "decreaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "mint",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "finishMinting",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "CappedToken",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "mint",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "pause",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "unpause",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "increaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "decreaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/vulnerable/0x6242ce3fc133420b9323a82f451b5a9caa736803_point_13_reentrancy.sol",
+      "vulnerability_type": "reentrancy",
+      "contract_label": 1,
+      "solc_ver": "0.5.16",
+      "reep_is_bug": false,
+      "reep_function": null,
+      "reep_contract": null,
+      "elapsed_s": 40.141090869903564,
+      "timed_out": false,
+      "error": "no csv output",
+      "function_predictions": [
+        {
+          "name": "mul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "div",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "sub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "add",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "mod",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "receiveApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "acceptOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "deposit_deposits",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approveAndCall",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferAnyERC20Token",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "deductToken",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setReserveCap",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setReserveCapPercentage",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "calcSupplyPercentage",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "distributeTokenByAmount",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "releaseCapByAmount",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/clean/0xab3ce08dd4479d399ea6813776ed502aed777d96.sol",
+      "vulnerability_type": "clean",
+      "contract_label": 0,
+      "solc_ver": "0.5.16",
+      "reep_is_bug": false,
+      "reep_function": "NO_1",
+      "reep_contract": "",
+      "elapsed_s": 4.739926338195801,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "mul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "div",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "sub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "add",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/vulnerable/0x0be4a987fd8dcbd2fff64ba4131d3a208307f667_point_3_reentrancy.sol",
+      "vulnerability_type": "reentrancy",
+      "contract_label": 1,
+      "solc_ver": "0.4.24",
+      "reep_is_bug": false,
+      "reep_function": null,
+      "reep_contract": null,
+      "elapsed_s": 49.27624797821045,
+      "timed_out": false,
+      "error": "no csv output",
+      "function_predictions": [
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "add",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "remove",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "check",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "has",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "checkRole",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "hasRole",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "ownerAddCeo",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "ownerRemoveCeo",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "ceoAddCoo",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "ceoRemoveCoo",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cooAddManager",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cooRemoveManager",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cooAddReviewer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cooRemoveReviewer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cooAddCro",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cooRemoveCro",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "addRole",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "removeRole",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "mul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "div",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "sub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "add",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "deposit_credits",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "increaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "decreaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "pause",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "unpause",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "increaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "decreaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getBlackListStatus",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "addBlackList",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "removeBlackList",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "destroyBlackFunds",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "submitIssue",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "comfirmIsses",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "submitRedeem",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "comfirmRedeem",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getMethodValue",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getMethodState",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupplyByLegacy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOfByLegacy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferByLegacy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowanceByLegacy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFromByLegacy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approveByLegacy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "increaseApprovalByLegacy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "decreaseApprovalByLegacy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "increaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "decreaseApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "deprecate",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setFeeParams",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferAssetOwner",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/clean/0x0a4fa9eb44e296485a51d468fd98f6b01c735f4c.sol",
+      "vulnerability_type": "clean",
+      "contract_label": 0,
+      "solc_ver": "0.4.24",
+      "reep_is_bug": false,
+      "reep_function": "compile error!",
+      "reep_contract": "",
+      "elapsed_s": 4.6570141315460205,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "owned",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "receiveApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "token",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approveAndCall",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "FILMToken",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "freezeAccount",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "unfreezeAccount",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "freezeTransfers",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "unfreezeTransfers",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "burn",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "burnFrom",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/clean/0x0a123a23ade571c7a716c596fb8ac4e6bc642e05.sol",
+      "vulnerability_type": "clean",
+      "contract_label": 0,
+      "solc_ver": "0.4.24",
+      "reep_is_bug": false,
+      "reep_function": "compile error!",
+      "reep_contract": "",
+      "elapsed_s": 4.748209238052368,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "Ownable",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "Globalnetworktoken",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "flush",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/vulnerable/0x96b709bbc1454716857605db9c942544668af79b_point_18_reentrancy.sol",
+      "vulnerability_type": "reentrancy",
+      "contract_label": 1,
+      "solc_ver": "0.4.26",
+      "reep_is_bug": false,
+      "reep_function": null,
+      "reep_contract": null,
+      "elapsed_s": 39.20226836204529,
+      "timed_out": false,
+      "error": "no csv output",
+      "function_predictions": [
+        {
+          "name": "Ownable",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "initialCongress",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "changeCongress",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "Destructible",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "destroy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "destroyAndSend",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "claimOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "deposit_userBalances",
+          "label": 1,
+          "pred": 0
+        },
+        {
+          "name": "initialSingleWithdraw",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "initialDayWithdraw",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "initialDayWithdrawCount",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "initialMonthWithdraw",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "initialChargeFee",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "initialChargeFeePool",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setSingleWithdraw",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setDayWithdraw",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setDayWithdrawCount",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setMonthWithdraw",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setChargeFee",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setChargeFeePool",
+          "label": 1,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/clean/0x20957ff053190f2b4459e3baf8c7211a9d519c16.sol",
+      "vulnerability_type": "clean",
+      "contract_label": 0,
+      "solc_ver": "0.5.16",
+      "reep_is_bug": false,
+      "reep_function": "NO_1",
+      "reep_contract": "",
+      "elapsed_s": 4.972956895828247,
+      "timed_out": false,
+      "error": null,
+      "function_predictions": [
+        {
+          "name": "mul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeDiv",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeSub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeAdd",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "balanceOf",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "allowance",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "totalSupply",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transfer",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "approve",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "createTokens",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setOwner",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "freezeTransfers",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "unfreezeTransfers",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "refundTokens",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "freezeAccount",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    },
+    {
+      "sol": "/home/minhnn/jaist-smb/jaist-s2505/s2520419/workspace/git/sc-vuln-detection/data/synthetic/sc-source/clean/0xec200345f7e2991bcead2d299902e1380f902dca.sol",
+      "vulnerability_type": "clean",
+      "contract_label": 0,
+      "solc_ver": "0.4.24",
+      "reep_is_bug": false,
+      "reep_function": null,
+      "reep_contract": null,
+      "elapsed_s": 63.5045485496521,
+      "timed_out": false,
+      "error": "no csv output",
+      "function_predictions": [
+        {
+          "name": "rawAddress",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "contentAddress",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "memCopy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "slice",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "sliceDestructive",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "popLastByte",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "popLast20Bytes",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "equals",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "readAddress",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "writeAddress",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "readBytes32",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "writeBytes32",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "readUint256",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "writeUint256",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "readBytes4",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "readBytesWithLength",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "writeBytesWithLength",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "deepCopyBytes",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeMul",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeDiv",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeSub",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeAdd",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "max64",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "min64",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "max256",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "min256",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "hashEIP712Message",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "addFillResults",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeGetPartialAmountFloor",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "safeGetPartialAmountCeil",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getPartialAmountFloor",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getPartialAmountCeil",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "isRoundingErrorFloor",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "isRoundingErrorCeil",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getOrderHash",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "hashOrder",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "abiEncodeFillOrder",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "addAuthorizedAddress",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "removeAuthorizedAddress",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "removeAuthorizedAddressAtIndex",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getAuthorizedAddresses",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getProxyId",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "isValidSignature",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "isValidSignature",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cancelOrdersUpTo",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "fillOrder",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cancelOrder",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getOrderInfo",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "registerAssetProxy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getAssetProxy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "matchOrders",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "preSign",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setSignatureValidatorApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "isValidSignature",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "executeTransaction",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "fillOrKillOrder",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "fillOrderNoThrow",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "batchFillOrders",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "batchFillOrKillOrders",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "batchFillOrdersNoThrow",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "marketSellOrders",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "marketSellOrdersNoThrow",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "marketBuyOrders",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "marketBuyOrdersNoThrow",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "batchCancelOrders",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getOrdersInfo",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "fillOrderInternal",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cancelOrderInternal",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "updateFilledState",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "updateCancelledState",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "assertFillableOrder",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "assertValidFill",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "assertValidCancel",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "calculateFillResults",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "dispatchTransferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "assertValidMatch",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "calculateMatchedFillResults",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "isValidWalletSignature",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "isValidValidatorSignature",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "hashZeroExTransaction",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getCurrentContextAddress",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "fillOrKillOrderInternal",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "transferOwnership",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cancelOrdersUpTo",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "fillOrder",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cancelOrder",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getOrderInfo",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "fillOrderInternal",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "cancelOrderInternal",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "updateFilledState",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "updateCancelledState",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "assertFillableOrder",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "assertValidFill",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "assertValidCancel",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "calculateFillResults",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "settleOrder",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "preSign",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "setSignatureValidatorApproval",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "isValidSignature",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "isValidWalletSignature",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "isValidValidatorSignature",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "fillOrKillOrder",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "fillOrderNoThrow",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "batchFillOrders",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "batchFillOrKillOrders",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "batchFillOrdersNoThrow",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "marketSellOrders",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "marketSellOrdersNoThrow",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "marketBuyOrders",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "marketBuyOrdersNoThrow",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "batchCancelOrders",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getOrdersInfo",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "fillOrKillOrderInternal",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "executeTransaction",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "hashZeroExTransaction",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getCurrentContextAddress",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "registerAssetProxy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "getAssetProxy",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "dispatchTransferFrom",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "matchOrders",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "assertValidMatch",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "calculateMatchedFillResults",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "settleMatchedOrders",
+          "label": 0,
+          "pred": 0
+        },
+        {
+          "name": "",
+          "label": 0,
+          "pred": 0
+        }
+      ]
+    }
+  ]
+}

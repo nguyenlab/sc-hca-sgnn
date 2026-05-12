@@ -1,0 +1,255 @@
+{
+  "hierarchical-rgcn": {
+    "name": "Hierarchical RGCN",
+    "synthetic_reentrancy": {
+      "precision": 0.562992125984252,
+      "recall": 0.89937106918239,
+      "f1": 0.692493946731235,
+      "accuracy": 0.7413441955193483,
+      "tp": 143,
+      "fp": 111,
+      "fn": 16,
+      "tn": 221
+    },
+    "realworld_reentrancy": {
+      "precision": 0.410958904109589,
+      "recall": 0.967741935483871,
+      "f1": 0.5769230769230769,
+      "accuracy": 0.6641221374045801,
+      "tp": 30,
+      "fp": 43,
+      "fn": 1,
+      "tn": 57
+    }
+  },
+  "dr-gcn": {
+    "name": "DR-GCN",
+    "synthetic_reentrancy": {
+      "precision": 0.550561797752809,
+      "recall": 0.9245283018867925,
+      "f1": 0.6901408450704226,
+      "accuracy": 0.7311608961303462,
+      "tp": 147,
+      "fp": 120,
+      "fn": 12,
+      "tn": 212
+    },
+    "realworld_reentrancy": {
+      "precision": 0.15384615384615385,
+      "recall": 0.25806451612903225,
+      "f1": 0.1927710843373494,
+      "accuracy": 0.48854961832061067,
+      "tp": 8,
+      "fp": 44,
+      "fn": 23,
+      "tn": 56
+    }
+  },
+  "tmp": {
+    "name": "TMP",
+    "synthetic_reentrancy": {
+      "precision": 0.5577689243027888,
+      "recall": 0.8805031446540881,
+      "f1": 0.6829268292682926,
+      "accuracy": 0.7352342158859471,
+      "tp": 140,
+      "fp": 111,
+      "fn": 19,
+      "tn": 221
+    },
+    "realworld_reentrancy": {
+      "precision": 0.046511627906976744,
+      "recall": 0.06451612903225806,
+      "f1": 0.05405405405405405,
+      "accuracy": 0.46564885496183206,
+      "tp": 2,
+      "fp": 41,
+      "fn": 29,
+      "tn": 59
+    }
+  },
+  "gat": {
+    "name": "GAT",
+    "synthetic_reentrancy": {
+      "precision": 0.6363636363636364,
+      "recall": 0.8364779874213837,
+      "f1": 0.7228260869565218,
+      "accuracy": 0.7922606924643585,
+      "tp": 133,
+      "fp": 76,
+      "fn": 26,
+      "tn": 256
+    },
+    "realworld_reentrancy": {
+      "precision": 0.034482758620689655,
+      "recall": 0.03225806451612903,
+      "f1": 0.03333333333333333,
+      "accuracy": 0.5572519083969466,
+      "tp": 1,
+      "fp": 28,
+      "fn": 30,
+      "tn": 72
+    }
+  },
+  "transformer": {
+    "name": "TransformerGNN",
+    "synthetic_reentrancy": {
+      "precision": 0.5863636363636363,
+      "recall": 0.8113207547169812,
+      "f1": 0.6807387862796833,
+      "accuracy": 0.7535641547861507,
+      "tp": 129,
+      "fp": 91,
+      "fn": 30,
+      "tn": 241
+    },
+    "realworld_reentrancy": {
+      "precision": 0.05405405405405406,
+      "recall": 0.06451612903225806,
+      "f1": 0.058823529411764705,
+      "accuracy": 0.5114503816793893,
+      "tp": 2,
+      "fp": 35,
+      "fn": 29,
+      "tn": 65
+    }
+  },
+  "bugsweeper": {
+    "name": "BugSweeper",
+    "synthetic_reentrancy": {
+      "precision": 0.5617529880478087,
+      "recall": 0.8867924528301887,
+      "f1": 0.6878048780487804,
+      "accuracy": 0.7393075356415478,
+      "tp": 141,
+      "fp": 110,
+      "fn": 18,
+      "tn": 222
+    },
+    "realworld_reentrancy": {
+      "precision": 0.08,
+      "recall": 0.12903225806451613,
+      "f1": 0.09876543209876543,
+      "accuracy": 0.44274809160305345,
+      "tp": 4,
+      "fp": 46,
+      "fn": 27,
+      "tn": 54
+    }
+  },
+  "bugsweeper-light": {
+    "name": "BugSweeperLight",
+    "synthetic_reentrancy": {
+      "precision": 0.5212765957446809,
+      "recall": 0.9245283018867925,
+      "f1": 0.6666666666666666,
+      "accuracy": 0.7006109979633401,
+      "tp": 147,
+      "fp": 135,
+      "fn": 12,
+      "tn": 197
+    },
+    "realworld_reentrancy": {
+      "precision": 0.2714285714285714,
+      "recall": 0.6129032258064516,
+      "f1": 0.3762376237623762,
+      "accuracy": 0.5190839694656488,
+      "tp": 19,
+      "fp": 51,
+      "fn": 12,
+      "tn": 49
+    }
+  },
+  "scvhunter": {
+    "name": "SCVHUNTER",
+    "synthetic_reentrancy": {
+      "precision": 0.9302325581395349,
+      "recall": 0.7547169811320755,
+      "f1": 0.8333333333333334,
+      "accuracy": 0.9022403258655805,
+      "tp": 120,
+      "fp": 9,
+      "fn": 39,
+      "tn": 323
+    },
+    "realworld_reentrancy": {
+      "precision": 0.8333333333333334,
+      "recall": 0.8064516129032258,
+      "f1": 0.819672131147541,
+      "accuracy": 0.916030534351145,
+      "tp": 25,
+      "fp": 5,
+      "fn": 6,
+      "tn": 95
+    }
+  },
+  "mlagnn": {
+    "name": "ML-AGNN",
+    "synthetic_reentrancy": {
+      "precision": 0.532,
+      "recall": 0.8364779874213837,
+      "f1": 0.6503667481662592,
+      "accuracy": 0.7087576374745418,
+      "tp": 133,
+      "fp": 117,
+      "fn": 26,
+      "tn": 215
+    },
+    "realworld_reentrancy": {
+      "precision": 0.045454545454545456,
+      "recall": 0.06451612903225806,
+      "f1": 0.05333333333333334,
+      "accuracy": 0.4580152671755725,
+      "tp": 2,
+      "fp": 42,
+      "fn": 29,
+      "tn": 58
+    }
+  },
+  "bsgvd": {
+    "name": "BSGVD",
+    "synthetic_reentrancy": {
+      "precision": 0.32448979591836735,
+      "recall": 1.0,
+      "f1": 0.4899845916795069,
+      "accuracy": 0.3258655804480652,
+      "tp": 159,
+      "fp": 331,
+      "fn": 0,
+      "tn": 1
+    },
+    "realworld_reentrancy": {
+      "precision": 0.24031007751937986,
+      "recall": 1.0,
+      "f1": 0.3875,
+      "accuracy": 0.25190839694656486,
+      "tp": 31,
+      "fp": 98,
+      "fn": 0,
+      "tn": 2
+    }
+  },
+  "hca-sgnn": {
+    "name": "HCA-SGNN (ours)",
+    "synthetic_reentrancy": {
+      "precision": 0.8548387096774194,
+      "recall": 1.0,
+      "f1": 0.9217391304347826,
+      "accuracy": 0.9448979591836735,
+      "tp": 159,
+      "fp": 27,
+      "fn": 0,
+      "tn": 304
+    },
+    "realworld_reentrancy": {
+      "precision": 0.7142857142857143,
+      "recall": 0.967741935483871,
+      "f1": 0.821917808219178,
+      "accuracy": 0.9007633587786259,
+      "tp": 30,
+      "fp": 12,
+      "fn": 1,
+      "tn": 88
+    }
+  }
+}

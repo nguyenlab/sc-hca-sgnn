@@ -1,0 +1,1771 @@
+{
+  "test_dataset": "realworld",
+  "train_corpus": "synth-trained",
+  "train_corpus_path": "/tmp/awdnn-synth-train/contracts_synth_train.txt",
+  "image": "awdnn:smoke",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    42
+  ],
+  "sample_seed": 42,
+  "n_contracts": 62,
+  "n_positive": 31,
+  "n_negative": 31,
+  "hyperparameters": "AWDNN driver defaults (authors' logged config): lr=1e-2, batch_size=64, vec_length=100, epochs=10, attn_units=8, Adam optimizer",
+  "train_elapsed_s_per_seed": {
+    "1": 20.272194147109985,
+    "2": 7.218676805496216,
+    "3": 7.004771709442139,
+    "4": 7.237553596496582,
+    "42": 7.113659143447876
+  },
+  "total_elapsed_s": 88.8956503868103,
+  "metrics": {
+    "contract_level_per_seed": [
+      {
+        "seed": 1,
+        "precision": 0.6,
+        "recall": 0.7741935483870968,
+        "f1": 0.676056338028169,
+        "tp": 24,
+        "fp": 16,
+        "fn": 7,
+        "tn": 15,
+        "elapsed_s": 4.43601655960083
+      },
+      {
+        "seed": 2,
+        "precision": 0.7307692307692307,
+        "recall": 0.6129032258064516,
+        "f1": 0.6666666666666667,
+        "tp": 19,
+        "fp": 7,
+        "fn": 12,
+        "tn": 24,
+        "elapsed_s": 3.5399887561798096
+      },
+      {
+        "seed": 3,
+        "precision": 0.7,
+        "recall": 0.6774193548387096,
+        "f1": 0.6885245901639343,
+        "tp": 21,
+        "fp": 9,
+        "fn": 10,
+        "tn": 22,
+        "elapsed_s": 4.109431743621826
+      },
+      {
+        "seed": 4,
+        "precision": 0.6216216216216216,
+        "recall": 0.7419354838709677,
+        "f1": 0.676470588235294,
+        "tp": 23,
+        "fp": 14,
+        "fn": 8,
+        "tn": 17,
+        "elapsed_s": 4.0656702518463135
+      },
+      {
+        "seed": 42,
+        "precision": 0.6388888888888888,
+        "recall": 0.7419354838709677,
+        "f1": 0.6865671641791045,
+        "tp": 23,
+        "fp": 13,
+        "fn": 8,
+        "tn": 18,
+        "elapsed_s": 4.000270843505859
+      }
+    ],
+    "contract_level_summary": {
+      "precision_mean": 0.6582559482559482,
+      "precision_stdev": 0.05502648085362775,
+      "recall_mean": 0.7096774193548387,
+      "recall_stdev": 0.06451612903225806,
+      "f1_mean": 0.6788570694546338,
+      "f1_stdev": 0.008874849669028038,
+      "f1_min": 0.6666666666666667,
+      "f1_max": 0.6885245901639343
+    }
+  },
+  "records": [
+    {
+      "name": "0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 0.0024433331564068794
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 8.955533849075437e-05
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.00011586541222641245
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.45657235383987427
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 0.004357331432402134
+        }
+      }
+    },
+    {
+      "name": "0x23a91059fdc9579a9fbd0edc5f2ea0bfdb70deb4_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9999982714653015
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.5220817923545837
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.7357335686683655
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9992775917053223
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9441257119178772
+        }
+      }
+    },
+    {
+      "name": "0x4320e6f8c05b27ab4707cd1f6d5ce6f3e4b3a5a1_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 0.0024440214037895203
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 8.944507135311142e-05
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.00011577153782127425
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.4565235376358032
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 0.004339597653597593
+        }
+      }
+    },
+    {
+      "name": "0x4e73b32ed6c35f570686b89848e5f39f20ecc106_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9990532994270325
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9956216812133789
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.45267871022224426
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9898954629898071
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9797074198722839
+        }
+      }
+    },
+    {
+      "name": "0x561eac93c92360949ab1f1403323e6db345cbf31_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 0.08176194876432419
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.05301361531019211
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.04600079357624054
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.3341037929058075
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 0.018926076591014862
+        }
+      }
+    },
+    {
+      "name": "0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9999669194221497
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9999998211860657
+        }
+      }
+    },
+    {
+      "name": "0x7541b76cb60f4c60af330c208b0623b7f54bf615_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9999973177909851
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9991182088851929
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.977484941482544
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999969601631165
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9999993443489075
+        }
+      }
+    },
+    {
+      "name": "0x7a8721a9d64c74da899424c1b52acbf58ddc9782_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.989229142665863
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.3911924660205841
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.977716326713562
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9566843509674072
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9644947648048401
+        }
+      }
+    },
+    {
+      "name": "0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9999973177909851
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9991182088851929
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.977484941482544
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999969601631165
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9999993443489075
+        }
+      }
+    },
+    {
+      "name": "0x8c7777c45481dba411450c228cb692ac3d550344_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9999995827674866
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        }
+      }
+    },
+    {
+      "name": "0x93c32845fae42c83a70e5f06214c8433665c2ab5_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9999973177909851
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9991182088851929
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.977484941482544
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999969601631165
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9999993443489075
+        }
+      }
+    },
+    {
+      "name": "0x941d225236464a25eb18076df7da6a91d0f95e9e_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.999952495098114
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9434695243835449
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.994193434715271
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9998281002044678
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9895123243331909
+        }
+      }
+    },
+    {
+      "name": "0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 6.102706174715422e-05
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 1.812455678873448e-07
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 5.182341192266904e-05
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.0006245137774385512
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 3.358865433256142e-05
+        }
+      }
+    },
+    {
+      "name": "0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 0.08176194876432419
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.05301361531019211
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.04600079357624054
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.3341037929058075
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 0.018926076591014862
+        }
+      }
+    },
+    {
+      "name": "0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.999999463558197
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.8666682839393616
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.9693219065666199
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999253153800964
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9887983202934265
+        }
+      }
+    },
+    {
+      "name": "0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9999982714653015
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.5220817923545837
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.7357335686683655
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9992775917053223
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9441257119178772
+        }
+      }
+    },
+    {
+      "name": "0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9999995827674866
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        }
+      }
+    },
+    {
+      "name": "0xbe4041d55db380c5ae9d4a9b9703f1ed4e7e3888_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 7.060923235258088e-05
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 1.7745612979069847e-07
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 5.221301762503572e-05
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.0006733169429935515
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 4.063159940415062e-05
+        }
+      }
+    },
+    {
+      "name": "0xcead721ef5b11f1a7b530171aab69b16c5e66b6e_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9999973177909851
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9991182088851929
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.977484941482544
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999969601631165
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9999993443489075
+        }
+      }
+    },
+    {
+      "name": "0xf015c35649c82f5467c9c74b7f28ee67665aad68_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9999973177909851
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9991182088851929
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.977484941482544
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999969601631165
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9999993443489075
+        }
+      }
+    },
+    {
+      "name": "etherbank_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9979097843170166
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9496622085571289
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.9990512728691101
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999374747276306
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9849104881286621
+        }
+      }
+    },
+    {
+      "name": "etherstore_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9997494220733643
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.9998350143432617
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999111294746399
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9999201893806458
+        }
+      }
+    },
+    {
+      "name": "modifier_reentrancy_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9993812441825867
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.44451308250427246
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.7891361713409424
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.7031995058059692
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.8995093703269958
+        }
+      }
+    },
+    {
+      "name": "reentrance_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9999844431877136
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.9999276995658875
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        }
+      }
+    },
+    {
+      "name": "reentrancy_bonus_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.994781494140625
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9030077457427979
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.999540388584137
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.608254611492157
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.7870417833328247
+        }
+      }
+    },
+    {
+      "name": "reentrancy_cross_function_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.5336553454399109
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.0010654213838279247
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.0007000466575846076
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.01073913462460041
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 3.8845031667733565e-05
+        }
+      }
+    },
+    {
+      "name": "reentrancy_dao_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9991246461868286
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.10646845400333405
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.9978448152542114
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9995618462562561
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.6820412278175354
+        }
+      }
+    },
+    {
+      "name": "reentrancy_insecure_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9999803900718689
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.2135552167892456
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.46685826778411865
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9994498491287231
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.5965858697891235
+        }
+      }
+    },
+    {
+      "name": "reentrancy_simple_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9943606853485107
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.6680024862289429
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.8585565090179443
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9995933175086975
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9523057341575623
+        }
+      }
+    },
+    {
+      "name": "simple_dao_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.842671275138855
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.8700907230377197
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.9998166561126709
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9553346633911133
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9975231289863586
+        }
+      }
+    },
+    {
+      "name": "spank_chain_payment_reentrancy.sol",
+      "contract_label": 1,
+      "vulnerability_type": "reentrancy",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 0.0030070641078054905
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.001332131796516478
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 7.638388524355832e-06
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.006598093081265688
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 0.0008141906000673771
+        }
+      }
+    },
+    {
+      "name": "0x5bbc74110a757689572b90bf8d45e487391567c3.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9999997019767761
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        }
+      }
+    },
+    {
+      "name": "0x5535a72556727c221c567e0fc4208c5a99dba1cc.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 0.036183279007673264
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.020140329375863075
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.0005339584313333035
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 2.2742708551959367e-06
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 0.00013151575694791973
+        }
+      }
+    },
+    {
+      "name": "0x538cc4af284ba376ad5bad0d364fbc9fb302546a.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.999968945980072
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9999794363975525
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.9980344176292419
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999991059303284
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9987021684646606
+        }
+      }
+    },
+    {
+      "name": "0x5d68c032d4341fa42c8986fcd5fe178bb50e3a0b.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.974004864692688
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.0007921333308331668
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.5730772018432617
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9993829131126404
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.7159661650657654
+        }
+      }
+    },
+    {
+      "name": "0x57652fc91f522f9eff0b38cdf1d51f5fb5764215.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 0.02620953693985939
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 1.8216344415122876e-06
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 4.001345132564893e-06
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.0005814793985337019
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 6.032534656696953e-06
+        }
+      }
+    },
+    {
+      "name": "0x56f4c053eb6fe1c36775a14bdd05c683e4fdede3.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 0.1599481850862503
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.003649096004664898
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.002673486713320017
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.782789945602417
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 0.05683550611138344
+        }
+      }
+    },
+    {
+      "name": "0x5680a36c1c14e7e9aced7a6601882e2145527ebd.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 0.41362059116363525
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.007510197814553976
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.37490832805633545
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.43370959162712097
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 0.006521156057715416
+        }
+      }
+    },
+    {
+      "name": "0x554a052abc9146b9575d87e23ce2bdc35ba5e373.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.7601799964904785
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9870920181274414
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.988655686378479
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9911024570465088
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9530033469200134
+        }
+      }
+    },
+    {
+      "name": "0x54e18d5057d5e55224cc9b6d14a671752d5b08bb.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 0.3301958739757538
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.003065162105485797
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.00017754608415998518
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.13583452999591827
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 0.019962899386882782
+        }
+      }
+    },
+    {
+      "name": "0x5c55678808cbc78b90d2f763c56a0abd622908a0.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9994312524795532
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9899680614471436
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.8484004139900208
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999584555625916
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9992835521697998
+        }
+      }
+    },
+    {
+      "name": "0x5ac203c782fe5b74ece9cb4ed13b0597bb5c872e.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 1.102541702380222e-07
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 8.755521641035102e-09
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 1.9162264663918904e-08
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 1.27455273002397e-08
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 6.094093057875533e-14
+        }
+      }
+    },
+    {
+      "name": "0x54b85b573c078d7adc76322841a170738c1e3207.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9855722188949585
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.2422693818807602
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.9286274909973145
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9975275993347168
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9671512246131897
+        }
+      }
+    },
+    {
+      "name": "0x5b3c2581171eec91d104caf4572a4806d8c8380a.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.8568875789642334
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.3094002604484558
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.010665793903172016
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.23093432188034058
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 0.2706327438354492
+        }
+      }
+    },
+    {
+      "name": "0x5973376b603268fe4251d13040226078257014f8.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9913221597671509
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.01714441180229187
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.0013108061393722892
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.03041405789554119
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9729104042053223
+        }
+      }
+    },
+    {
+      "name": "0x53b04999c1ff2d77fcdde98935bb936a67209e4c.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9999998211860657
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.999752402305603
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.9999575018882751
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        }
+      }
+    },
+    {
+      "name": "0x5dbe296f97b23c4a6aa6183d73e574d02ba5c719.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 0.19568754732608795
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.2276662290096283
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.08356226980686188
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.09410553425550461
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 0.04593264311552048
+        }
+      }
+    },
+    {
+      "name": "0x5c72b0da98c150f5e6a342508459542fe3b8f0ab.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 3.1065330863278007e-10
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 1.0920707914363614e-11
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 4.484807924337586e-12
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 1.4756292021633755e-10
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 1.3917603736146589e-09
+        }
+      }
+    },
+    {
+      "name": "0x565538da040928281030720914f061832d852022.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9869745373725891
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.08321717381477356
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.26738405227661133
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9782669544219971
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 0.027004245668649673
+        }
+      }
+    },
+    {
+      "name": "0x56ba2109449a8dd1074e97d4033bf3ea5f0e7ae8.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 0.0006013024249114096
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.0005329956184141338
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 2.2325209556584014e-06
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 1.0413503332529217e-05
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 4.458900366444141e-05
+        }
+      }
+    },
+    {
+      "name": "0x5a276aeb77bcfdac8ac6f31bbc7416ae1a85eef2.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999708533287048
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9999999403953552
+        }
+      }
+    },
+    {
+      "name": "0x5b6a7fa842a95d70df2216a7f58c3cd483bd703f.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9999979138374329
+        },
+        "2": {
+          "pred": 1,
+          "proba_bug": 0.9986228346824646
+        },
+        "3": {
+          "pred": 1,
+          "proba_bug": 0.965477466583252
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9996374845504761
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9999882578849792
+        }
+      }
+    },
+    {
+      "name": "0x5bfc1ff7f9e087c64fefb34f2e7cf24e5570919f.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 3.91576860183946e-14
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 1.6293326720641117e-15
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 2.2913932096723156e-20
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 5.472407616697405e-22
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 1.6258793035154376e-24
+        }
+      }
+    },
+    {
+      "name": "0x5b11aacb6bddb9ffab908fdce739bf4aed554327.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9969412088394165
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.0007079402566887438
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.0047598546370863914
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.369882732629776
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 0.012431374751031399
+        }
+      }
+    },
+    {
+      "name": "0x560b63bb82ce25c2c9b7a63c96378f6b1f9ea5b0.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9931840896606445
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.026287278160452843
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.20423230528831482
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9991872906684875
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9970752596855164
+        }
+      }
+    },
+    {
+      "name": "0x5c790caf8d45cf339362a78fc56ba9e3cf2aa6a0.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 0.19568754732608795
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.2276662290096283
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.08356226980686188
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.09410553425550461
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 0.04593264311552048
+        }
+      }
+    },
+    {
+      "name": "0x595832f8fc6bf59c85c527fec3740a1b7a361269.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.9923270344734192
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.12641264498233795
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.16204653680324554
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.04299318417906761
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9963249564170837
+        }
+      }
+    },
+    {
+      "name": "0x5d64170c575be26c16008d49abe98ede2ec199af.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 0.21239015460014343
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.047950442880392075
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.012584528885781765
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.9999040365219116
+        },
+        "42": {
+          "pred": 1,
+          "proba_bug": 0.9866977334022522
+        }
+      }
+    },
+    {
+      "name": "0x598c9a4f069dc076984868873c01e78a905d50e6.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 1,
+          "proba_bug": 0.858757495880127
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 0.018568407744169235
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 0.048431579023599625
+        },
+        "4": {
+          "pred": 1,
+          "proba_bug": 0.6800748705863953
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 0.39761874079704285
+        }
+      }
+    },
+    {
+      "name": "0x5d746a60d39a3b584b438374d5e95e2ab00085b5.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 3.0481357455452995e-12
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 3.461807923654803e-11
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 2.8873249819684477e-13
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 1.7741302280099353e-16
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 1.762721885350502e-17
+        }
+      }
+    },
+    {
+      "name": "0x535960f316117a9941ea37b06393b81341a17421.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 0.0003830545174423605
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 1.4795821698498912e-05
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 2.119191958627198e-05
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 0.03597983717918396
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 6.657805442955578e-06
+        }
+      }
+    },
+    {
+      "name": "0x55862a06787dfbaa84ac4230492a3f2ee655c52e.sol",
+      "contract_label": 0,
+      "vulnerability_type": "clean",
+      "predictions_by_seed": {
+        "1": {
+          "pred": 0,
+          "proba_bug": 1.883577842309858e-11
+        },
+        "2": {
+          "pred": 0,
+          "proba_bug": 3.988062863887615e-13
+        },
+        "3": {
+          "pred": 0,
+          "proba_bug": 2.5710144903603713e-17
+        },
+        "4": {
+          "pred": 0,
+          "proba_bug": 3.9178711779932314e-20
+        },
+        "42": {
+          "pred": 0,
+          "proba_bug": 6.003756554550415e-22
+        }
+      }
+    }
+  ]
+}
