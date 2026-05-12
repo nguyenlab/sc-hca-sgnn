@@ -301,7 +301,7 @@ If you use this framework in your research, please cite:
 ```bibtex
 @software{sc-vuln-detection,
   title={Smart Contract Vulnerability Detection with Graph Neural Networks},
-  url={https://github.com/your-username/sc-vuln-detection}
+  url={https://github.com/nguyenlab/sc-hca-sgnn}
 }
 ```
 
