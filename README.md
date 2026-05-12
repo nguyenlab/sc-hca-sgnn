@@ -6,6 +6,8 @@ A comprehensive framework for detecting vulnerabilities in Solidity smart contra
 
 This project transforms Solidity source code into rich multi-edge AST graphs and applies various GNN architectures to detect vulnerabilities at both the **contract level** (graph classification) and **function level** (subgraph classification).
 
+For the full vulnerability injection system please check out this repository: [nguyenlab/sc-ast-injector](https://github.com/nguyenlab/sc-ast-injector)
+
 ### Key Features
 
 - **Multi-edge AST representation** — 8 edge types: AST structure, reference/data flow, control flow (next/true/false branches), function calls, inheritance, and guard conditions
@@ -294,17 +296,4 @@ sc-vuln-detection/
     └── ...
 ```
 
-## Citation
 
-If you use this framework in your research, please cite:
-
-```bibtex
-@software{sc-vuln-detection,
-  title={Smart Contract Vulnerability Detection with Graph Neural Networks},
-  url={https://github.com/nguyenlab/sc-hca-sgnn}
-}
-```
-
-## License
-
-This project is for research purposes.
